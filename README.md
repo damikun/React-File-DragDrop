@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
-    <img src="images/Upload.gif" alt="Logo" width="80" height="80">
+    <img src="images/Upload.gif" alt="Example demo" >
   </a>
   
   <p align="center">
