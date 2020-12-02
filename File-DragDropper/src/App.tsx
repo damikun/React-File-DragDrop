@@ -18,6 +18,7 @@ function App() {
           )}
         >
           <FileDragDrop
+            className="text-gray-600"
             accept="image/png"
             api_url="https://localhost:5001/api/Data/UploadFile"
             onSuccess={(token, response) => {

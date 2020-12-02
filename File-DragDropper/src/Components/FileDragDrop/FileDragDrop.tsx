@@ -26,6 +26,7 @@ type functionFileDragDropProps = {
   accept?: string;
   multiple?: boolean;
   variant?: "big" | "small";
+  className?:string;
 };
 
 export default function FileDragDrop({
@@ -36,6 +37,7 @@ export default function FileDragDrop({
   accept,
   multiple = false,
   variant = "big",
+  className
 }: functionFileDragDropProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -266,7 +268,7 @@ export default function FileDragDrop({
   const inputFile = useRef<HTMLInputElement>(null);
 
   return (
-    <div className="flex w-full h-full" ref={divRef}>
+    <div className={clsx("flex w-full h-full",className)} ref={divRef}>
       <div className="w-full h-full  ">
         <div
           className={clsx(
