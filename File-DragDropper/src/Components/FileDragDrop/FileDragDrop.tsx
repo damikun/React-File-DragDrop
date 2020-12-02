@@ -29,6 +29,7 @@ type functionFileDragDropProps = {
   className?:string;
 };
 
+
 export default function FileDragDrop({
   onSuccess,
   onError,
@@ -54,6 +55,8 @@ export default function FileDragDrop({
     setIsSuccess(false);
     return token;
   }
+
+
 
   function upload(file: File, onUploadProgress: (progressEvent: any) => void) {
     let formData = new FormData();
@@ -81,9 +84,7 @@ export default function FileDragDrop({
   const onDragEnter = useCallback((e) => {
     if (e?.currentTarget?.contains(e.relatedTarget)) return;
 
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-    e.preventDefault();
+    HandleEventDefaults(e);
 
     if (progress === 0 && !isVisible) setIsVisible(true);
   }, [progress,isVisible]);
@@ -91,17 +92,13 @@ export default function FileDragDrop({
   const onDragOver = useCallback((e) => {
     if (e?.currentTarget?.contains(e.relatedTarget)) return;
 
-    e.preventDefault();
-    e.stopPropagation();
-    e.stopImmediatePropagation();
+    HandleEventDefaults(e);
   }, []);
 
   const onDragLeave = useCallback((e) => {
     if (e.currentTarget.contains(e.relatedTarget)) return;
 
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-    e.preventDefault();
+    HandleEventDefaults(e);
 
     if (progress === 0) setIsVisible(false);
   }, [progress]);
@@ -367,6 +364,14 @@ function GetProgress({progress,multiple,isSuccess}:GetProgressProps){
 </div>
 }
 
+//////////////////////////////////////////////////
+
+function HandleEventDefaults(e:any){
+  e.stopPropagation();
+  e.stopImmediatePropagation();
+  e.preventDefault();
+  return e;
+}
 
 //////////////////////////////////////////////////
 
