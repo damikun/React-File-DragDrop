@@ -39,7 +39,7 @@ This componnent helps to push file over API to backend to get tmp file token whi
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/damikun/React-File-DragDrop.git
    ```
 2. Restore packages
    ```
