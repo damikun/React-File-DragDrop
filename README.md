@@ -9,7 +9,7 @@
   <h3 align="center">File Drag-Drop</h3>
 
   <p align="center">
-   Preview of drag drop react component
+   Preview of file drag drop react component
   </p>
     <p align="center">
    This is frontend file dropper include axios to send file and get its token
