@@ -11,6 +11,9 @@
   <p align="center">
    Preview of drag drop react component
   </p>
+    <p align="center">
+   This is only frontend file dropper include axios to send file and get its token
+  </p>
 </p>
 
 
