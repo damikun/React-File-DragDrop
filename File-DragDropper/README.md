@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
-    <img src="images/fileProcess.png" alt="Example demo" >
+    <img src="../images/fileProcess.png" alt="Example demo" >
   </a>
   
   <p align="center">
