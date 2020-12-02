@@ -1,12 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/damikun/React-File-DragDrop">
+  <img src="images/Upload.gif" alt="Example demo" >
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">File Drag-Drop</h3>
 
-### `npm start`
+  <p align="center">
+   Preview of file drag drop react component
+  </p>
+    <p align="center">
+   This is frontend file dropper include axios to send file and get its token
+  </p>
+</p>
+
+
+<!-- ABOUT -->
+## About
+
+<p align="center">
+  <a href="https://github.com/damikun/React-File-DragDrop">
+    <img src="images/fileProcess.png" alt="Example demo" >
+  </a>
+  
+  <p align="center">
+   Internal project file upload process
+  </p>
+</p>
+
+The image describe simplified version of file upload handling for custom system...
+
+This componnent helps to push file over API to backend to get tmp file token which is used to push file using form...
+
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/damikun/React-File-DragDrop.git
+   ```
+2. CD to project dir
+   ```sh
+   cd .\File-DragDropper\
+   ```
+3. Restore packages
+   ```
+   yarn install
+   ```
+4. Build and run demo
+   ```
+   yarn run start
+   ```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,33 +61,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+<!-- USAGE EXAMPLES -->
+## Configuration API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```js
+    <FileDragDrop
+      className="text-gray-600"
+      accept="image/png"
+      multiple={false}
+      api_url="https://localhost:5001/api/Data/UploadFile"
 
-### `npm run build`
+      onSuccess={(token, response) => {
+        setstate(token);
+      }}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+      onError={(type, message, object) => {
+        window.alert(`Type: ${type}, Messagbe: ${type}, Object: ${object}`)   
+        if (type === "Exception") console.log(object);
+        setstate("");
+      }}
+    />
+   ```
