@@ -41,14 +41,18 @@ This componnent helps to push file over API to backend to get tmp file token whi
    ```sh
    git clone https://github.com/damikun/React-File-DragDrop.git
    ```
-2. Restore packages
+2. CD to project dir
+   ```sh
+   cd .\File-DragDropper\
+   ```
+3. Restore packages
    ```
    yarn install
    ```
-3. Build and run demo
+4. Build and run demo
    ```
    yarn run start
-   ``
+   ```
    
 <!-- USAGE EXAMPLES -->
 ## Configuration API
