@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
-    <img src="images/file.png" alt="Logo" width="80" height="80">
+    <img src="images/file.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">File Drag-Drop</h3>
