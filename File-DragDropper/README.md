@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
-  <img src="images/Upload.gif" alt="Example demo" >
+  <img src="../images/Upload.gif" alt="Example demo" >
   </a>
 
   <h3 align="center">File Drag-Drop</h3>
