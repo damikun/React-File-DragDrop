@@ -50,6 +50,7 @@ This componnent helps to push file over API to backend to get tmp file token whi
 ##### Other
 - Using Tailwind you can style it in your way
 - Using PurgeCss by default
+- Using functional components and hooks
 
 ### Installation
 
