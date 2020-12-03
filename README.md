@@ -20,7 +20,8 @@
 
 
 <!-- ABOUT -->
-## About
+### About full process
+- This repo contains only Frontend component
 
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
@@ -66,7 +67,7 @@ This componnent helps to push file over API to backend to get tmp file token whi
    ```
    
 <!-- USAGE EXAMPLES -->
-## Configuration API
+### Configuration API
 
    ```js
     <FileDragDrop
