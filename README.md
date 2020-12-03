@@ -32,10 +32,19 @@
   </p>
 </p>
 
+
+##### Description
+
 The image describe simplified version of file upload handling for custom system...
 
-This componnent helps to push file over API to backend to get tmp file token which is used to push file using form...
+This componnent helps to push file over API to backend to get tmp file token which is used to commit file using form...
 
+##### Concepts
+- Just poit it to API and get result
+- Self managed component
+- Ability to cancle request in flight
+- Process indicator
+- Validate file types on drop based on "accept" input string
 
 ### Installation
 

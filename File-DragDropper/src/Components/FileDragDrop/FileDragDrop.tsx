@@ -56,8 +56,6 @@ export default function FileDragDrop({
     return token;
   }
 
-
-
   function upload(file: File, onUploadProgress: (progressEvent: any) => void) {
     let formData = new FormData();
     formData.append("file", file);
@@ -387,7 +385,6 @@ function containsFiles(event: any) {
 }
 
 //////////////////////////////////////////////////
-
 
 function validateType(file: File, accept: string) {
   if (file && accept) {
