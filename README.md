@@ -47,6 +47,10 @@ This componnent helps to push file over API to backend to get tmp file token whi
 - Process indicator
 - Validate file types on drop based on "accept" input string
 
+##### Other
+- Using Tailwind you can style it in your way
+- Using PurgeCss by default
+
 ### Installation
 
 1. Clone the repo
