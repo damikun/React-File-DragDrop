@@ -6,13 +6,13 @@
   <img src="images/Upload.gif" alt="Example demo" >
   </a>
 
-  <h3 align="center">React File Drag-Drop Component</h3>
+  <h3 align="center">React File Drag-Drop</h3>
 
   <p align="center">
    Preview of file drag drop react component
   </p>
     <p align="center">
-   This is frontend file dropper include axios to send file and get its token
+   This is frontend file dropper include axios under the hood to send file and get its token.
   </p>
 </p>
 
