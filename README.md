@@ -26,7 +26,7 @@
   </a>
   
   <p align="center">
-   Internal project file upload process
+   Custom project file upload process
   </p>
 </p>
 
