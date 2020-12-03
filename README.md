@@ -6,7 +6,7 @@
   <img src="images/Upload.gif" alt="Example demo" >
   </a>
 
-  <h3 align="center">File Drag-Drop</h3>
+  <h3 align="center">React File Drag-Drop Component</h3>
 
   <p align="center">
    Preview of file drag drop react component
