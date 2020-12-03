@@ -21,7 +21,7 @@
 
 <!-- ABOUT -->
 ### About full process
-- This repo contains only Frontend component
+- This repo contains only Frontend component (is a component trim of personal UI lib)
 
 <p align="center">
   <a href="https://github.com/damikun/React-File-DragDrop">
